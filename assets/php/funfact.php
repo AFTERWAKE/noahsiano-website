@@ -1,4 +1,5 @@
 <?php
+function phpfunfact(){
 $facts = array(
     	"Fun Fact # 1: Banging your head against a wall burns 150 calories an hour.",
 "Fun Fact # 2: In the UK, it is illegal to eat mince pies on Christmas Day!",
@@ -103,4 +104,5 @@ $facts = array(
 );
 $key = array_rand($facts);
 echo "Fun Fact #" . ($key+1) . ": " . $facts[$key];
+}
 ?>
