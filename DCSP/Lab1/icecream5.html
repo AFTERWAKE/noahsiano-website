@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>YOOOOOOOOOOOOOOOOOOOOOOOOO</title>
+</head>
+<body>
+   <h1>Ice Cream Request Form</h1>
+   <hr />
+   <form action="http://pluto.cse.msstate.edu/~jjc52/get_test.php" method="get">
+      <select name="Flavor:">
+         <option value="Van">Vanilla</option>
+         <option value="Choc">Chocolate</option>
+         <option value="Straw">Strawberry</option>
+         <option value="Coff" selected>Coffee</option>
+         <option value="Marb">Marble Fudge</option>
+      </select>
+      <br /><br />
+      We now 3D print your cone in any color! What color would you like:
+      <input type="color" name="Color" value="#660000">
+      <br /><br />
+      Sprinkles?
+      <input type="checkbox" name="Sprinkles" checked>
+      Number of scoops:
+      <input type="number" name="Scoops" min=1 max=10 value=1>
+      <br /><br />
+      Your name:
+      <input type="text" name="Name" required>
+      Date to be delivered:
+      <input type="date" name="Delivery Date" required>
+      <br /><br />
+      Describe what you like about our ice cream(optional):
+      <br />
+      <textarea name="Feedback" rows="3"></textarea>
+      <br /><br />
+      <input type="submit" value="Serve it up!">
+      <input type="reset" value="Reset my responses">
+   </form>
+   <hr />
+   <br />
+   <footer>Thank you for your business!</footer>
+</body>
+</html>
