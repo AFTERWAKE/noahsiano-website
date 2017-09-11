@@ -41,7 +41,6 @@ require 'assets/php/funfact.php';
 						<div class="inner">
 							<h1>Noah Siano</h1>
 							<p>Mississippi State University student. Computer Engineering.</p></br>
-							<p><em>This website is not yet finished, so please excuse any blemishes.</em></p>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
 							</ul>
@@ -75,20 +74,6 @@ require 'assets/php/funfact.php';
 								</div>
 							</div>
 						</section>
-<!---
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>More</h2>
-									<p>examples here</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
--->
 					</section>
 
 				<!-- Two -->
@@ -172,38 +157,18 @@ require 'assets/php/funfact.php';
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>Please feel free to contact me for any reason. The message box below <u>does not work</u> yet. Sorry.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="field half first">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="5"></textarea>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
+							<div>
 								<section>
 									<ul class="contact">
 										<li>
 											<h3>Address</h3>
-											<span>1202 St. Andrews Lane<br />
-											Starkville, MS 39759<br />
-											USA</span>
+											<span>
+												1202 St. Andrews Lane, Starkville, MS 39759
+											</span>
 										</li>
 										<li>
 											<h3>Email</h3>
-											<a href="#">nrs171@msstate.edu</a>
+											<a href="mailto:nrs171@msstate.edu">nrs171@msstate.edu</a>
 										</li>
 										<li>
 											<h3>Phone</h3>
@@ -212,11 +177,10 @@ require 'assets/php/funfact.php';
 										<li>
 											<h3>Social</h3>
 											<ul class="icons">
-												<!---<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>--->
 												<li><a href="https://www.facebook.com/NoahSiano" class="fa-facebook"><span class="label">Facebook</span></a></li>
 												<li><a href="https://github.com/afterwake" class="fa-github"><span class="label">GitHub</span></a></li>
 												<li><a href="https://www.instagram.com/noahsiano/" class="fa-instagram"><span class="label">Instagram</span></a></li>
-												<!---<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>--->
+												<li><a href="https://www.linkedin.com/in/noah-siano-2975b4149/" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
 											</ul>
 										</li>
 									</ul>
