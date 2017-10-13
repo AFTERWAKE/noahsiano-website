@@ -1,2 +1,7 @@
-echo '<?php phpfunfact(); ?>' | \
-	sudo tee /var/www/html/assets/php/funfact.php
+<?php
+include 'assets/php/funfact.php';
+?>
+
+<?php
+phpfunfact();
+?>
