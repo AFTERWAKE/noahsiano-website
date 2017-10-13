@@ -1,2 +1,2 @@
 echo '<?php phpfunfact(); ?>' | \
-	sudo tee /home/noah/Demo/assets/php/funfact.php
+	sudo tee assets/php/funfact.php
