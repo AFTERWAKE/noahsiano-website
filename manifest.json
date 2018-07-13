@@ -1,0 +1,13 @@
+{
+  "name": "Noah Siano",
+  "short_name": "Noah Siano",
+  "description": "Noah Siano is a computer engineering student at Mississippi State. He is expected to graduate in May 2019.",
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#3186ab",
+  "icons": [{
+    "src": "favicon.ico",
+    "sizes": "48x48",
+    "type": "image/x-icon"
+  }]
+}
