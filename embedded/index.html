@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noah's Embedded Dissection</title>
+  <style type="text/css">
+    body {
+      margin:40px auto;
+      max-width:650px;
+      line-height:1.6;
+      font-size:18px;
+      color:#444;
+      padding:0 10px
+    }
+    h1,h2,h3 {
+      line-height:1.2
+    }
+    table.tableizer-table {
+  		font-size: 18px;
+  		border: 1px solid #CCC;
+  	}
+  	.tableizer-table td {
+  		padding: 4px;
+  		margin: 3px;
+  		border: 1px solid #CCC;
+  	}
+  	.tableizer-table th {
+  		background-color: #000000;
+  		color: #FFF;
+  		font-weight: bold;
+  	}
+    img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body data-gr-c-s-loaded="true">
+  <header>
+    <h1>TP-Link WiFi Smart Plug Dissection</h1>
+    <aside>Noah Siano's Embedded Dissection for ECE 4723, Spring 2019.</aside>
+  </header>
+  <h2>Seriously, you can turn your lights on with your voice.</h2>
+  <p>
+    <strong>Let's look at this history...</strong>
+  </p>
+  <p>
+    The TP-Link smart plug is one of many Internet of Things devices that allows you to
+    connect different parts of your home with other devices in your home, using devices such as a
+    Google Home or an Amazon Alexa. These technologies are relatively new, becoming
+    popularized over the last 5 years. In fact, the technology is so new it is adapting
+    still, with new IoT gadgets coming out every day.
+  </p>
+  <p>
+    People want the ability to control household objects with their voice, and the TP-Link
+    smart plug allows just that! You can plug in a lamp or a fan, among other things.
+    The TP-Link plug connects to your smartphone and lets you turn it on or off with
+    your voice, your phone, or on a schedule. You can also access it from away from your
+    home, so if you forget to turn off your lamps frequently, this might be the product
+    for you!
+  </p>
+  <h2>So what's it look like?</h2>
+  <p>
+    Take a look at a photo gallery <a href="https://photos.app.goo.gl/uHsAXBFSUoUibfkbA" target="_blank">here</a>.
+    <br>
+    <em>If that link is down, <a href="photos/">here are the photos hosted on this website</a>.
+    Fair warning though, it's 245MB of pictures.</em>
+  </p>
+  <p>
+    As you can see, the device is very small and compact. In fact, it allows you to
+    plug in two at a time in one outlet, whereas much of the competition is too large
+    to fit two side-by-side.
+  </p>
+  <h2>Ok, so... How does it work again?</h2>
+  <p>
+    I've graphed out a handy flowchart that shows product operation! Check it out:
+    <br>
+    <img src="tplink_flowchart.png"/>
+  </p>
+  <h2>Now lets see that schematic</h2>
+  <p>
+    This thing had a nice and simple PCB. There were actually two PCBs, but one of
+    them is just a WiFi board from Qualcomm. Here's the schematic:
+    <br>
+    <img src="schematic.png"/>
+  </p>
+  <h3>Alright, you've convinced me...</h3>
+  <h2>How much is this thing anyways?</h2>
+  <p>
+    As of April 11, 2019:
+    <br>
+    The cost of each unit <a href="https://www.amazon.com/dp/B01K1JVZOE">
+    on Amazon</a>
+    is $19.79. You can also buy it <a href="https://www.bestbuy.com/site/tp-link-kasa-smart-wi-fi-plug-mini-white/5763116.p?skuId=5763116">
+    from Best Buy</a> for $20.99, or you could buy it <a href="https://www.walmart.com/ip/55552851">
+    from Walmart</a> for $19.79, the same price as Amazon.
+  </p>
+  <p>
+    The Bill of Materials for the parts I found is:
+    <br>
+    <table class="tableizer-table">
+      <thead>
+        <tr class="tableizer-firstrow"><th>Part Name</th><th>Description</th><th>Where to buy</th><th>Quantity</th><th>Unit Price</th><th>Total Cost</th></tr>
+      </thead>
+      <tbody>
+       <tr><td>Churod CHI03-S-105DA2</td><td>1811W Power Relay</td><td>AliExpress</td><td>1</td><td>$0.66</td><td>$0.66</td></tr>
+       <tr><td>Polarized Capacitors</td><td>Various polarized capacitors</td><td>Digikey</td><td>4</td><td>$0.01</td><td>$0.04</td></tr>
+       <tr><td>SMB Capacitors</td><td>Various surface mount capacitors</td><td>Digikey</td><td>6</td><td>$0.00</td><td>$0.01</td></tr>
+       <tr><td>10 ohm resistor</td><td>10 ohm through-hole resistor +/-0.25%</td><td>Digikey</td><td>1</td><td>$1.26</td><td>$1.26</td></tr>
+       <tr><td>1k ohm resistor</td><td>1k ohm through-hole resistor +/- 10%</td><td>Digikey</td><td>1</td><td>$2.08</td><td>$2.08</td></tr>
+       <tr><td>510 ohm resistor</td><td>510 ohm SMB resistor</td><td>Digikey</td><td>1</td><td>$0.01</td><td>$0.01</td></tr>
+       <tr><td>10k ohm resistor</td><td>10k ohm SMB resistor</td><td>Digikey</td><td>1</td><td>$0.01</td><td>$0.01</td></tr>
+       <tr><td>3.3k ohm resistor</td><td>3.3k ohm SMB resistor</td><td>Digikey</td><td>1</td><td>$0.01</td><td>$0.01</td></tr>
+       <tr><td>100k ohm resistor</td><td>100k ohm SMB resistor</td><td>Digikey</td><td>2</td><td>$0.01</td><td>$0.02</td></tr>
+       <tr><td>1.0 ohm resistor</td><td>1.0ohm SMB resistor</td><td>Digikey</td><td>1</td><td>$0.01</td><td>$0.01</td></tr>
+       <tr><td>PNP Transistor</td><td>PNP transistor SOT23 300V rated</td><td>Digikey</td><td>1</td><td>$0.04</td><td>$0.04</td></tr>
+       <tr><td>Diode small</td><td>&nbsp;</td><td>Digikey</td><td>1</td><td>$0.06</td><td>$0.06</td></tr>
+       <tr><td>Diode medium</td><td>&nbsp;</td><td>Digikey</td><td>1</td><td>$0.09</td><td>$0.09</td></tr>
+       <tr><td>1N4007 Rectifier Diode</td><td>Labeled M7</td><td>Digikey</td><td>1</td><td>$0.30</td><td>$0.30</td></tr>
+       <tr><td>PJ7475 MB10F</td><td>Bridge Rectifier Diode</td><td>Digikey</td><td>1</td><td>$0.05</td><td>$0.05</td></tr>
+       <tr><td>OB2222MCP</td><td>Power Switch</td><td>Alibaba</td><td>1</td><td>$0.10</td><td>$0.10</td></tr>
+       <tr><td>QCA4010</td><td>Qualcomm Wifi SoC Board</td><td>???</td><td>1</td><td>$1.00</td><td>$1.00</td></tr>
+       <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+       <tr><td>Non-Electrical Parts:</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+       <tr><td>Part Name</td><td>Description</td><td>Where to buy</td><td>Quantity</td><td>Unit Price</td><td>Total Cost</td></tr>
+       <tr><td>Wall plug prongs female</td><td>Prongs for a standard wall plug to attach to</td><td>Made in house</td><td>3</td><td>$0.10</td><td>$0.30</td></tr>
+       <tr><td>Wall plug prongs male</td><td>Prongs to plug in to standard wall plug</td><td>Made in house</td><td>3</td><td>$0.10</td><td>$0.30</td></tr>
+       <tr><td>Plastic housing</td><td>Dye-cast plastic housing for product</td><td>Made in house</td><td>3</td><td>$0.05</td><td>$0.15</td></tr>
+       <tr><td>Screw</td><td>Small screw to help affix PCB to plastic housing</td><td>Alibaba</td><td>1</td><td>$0.01</td><td>$0.01</td></tr>
+       <tr><td>Packaging</td><td>Nice multi-color printed box and molded insides</td><td>Made in house</td><td>1</td><td>$1.00</td><td>$1.00</td></tr>
+      </tbody>
+    </table>
+    Looking at the margins...
+    <table class="tableizer-table">
+    <thead><tr class="tableizer-firstrow"><th>Total Costs:</th></tr></thead><tbody>
+     <tr><td>$7.52</td></tr>
+     <tr><td>Selling Price:</td></tr>
+     <tr><td>$19.79</td></tr>
+     <tr><td>Gross Margin:</td></tr>
+     <tr><td>62.01%</td></tr>
+    </tbody></table>
+    It looks like TP-Link is making a decent margin of 62% on each of these. I had to
+    estimate on a lot of the non-electrical parts, but I was assuming that TP-Link,
+    being a large company that sells a lot of their products, was ordering parts by
+    the thousands, and thus able to get the best bulk price available.
+  </p>
+  <h2>Lets put this bad boy back togeth- Wait, what?!</h2>
+  <p>
+    In order to get the PCB separated from the plastic housing, I had to pry apart
+    some important metal pieces, which <strong>makes reassembly impossible</strong>. Furthermore,
+    I damaged a couple components, and since this is plugging into the wall for
+    power, I think it is safest to not plug it in with damaged power componenets.
+    <em>I'm sorry.</em>
+  </p>
+  <hr>
+  <h2>Epilogue</h2>
+  <p>
+    Website design inspired by the geniuses behind <a href="http://bettermotherfuckingwebsite.com/">bettermotherfuckingwebsite.com</a>.
+  </p>
+  <p>
+    This page was created by <a href="https://noahsiano.com/">me</a>.
+  </p>
+</body>
