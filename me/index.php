@@ -49,7 +49,7 @@ require 'assets/php/funfact.php';
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Noah Siano</h1>
-							<p>Mississippi State University student. Computer Engineering.</p></br>
+							<p>Huntsville, AL resident. Software Engineer at Northrop Grumman.</p></br>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
 							</ul>
@@ -142,7 +142,7 @@ require 'assets/php/funfact.php';
 								</section>
 								<section>
 									<span class="icon major fa-cog"></span>
-									<h3>Expected Graduation Date</h3>
+									<h3>Graduation Date</h3>
 									<p>
 										May 2019
 									</p>
@@ -170,14 +170,14 @@ require 'assets/php/funfact.php';
 								<section>
 									<ul class="contact">
 										<li>
-											<h3>Address</h3>
+											<h3>City</h3>
 											<span>
-												1202 St. Andrews Lane, Starkville, MS 39759
+												Huntsville, AL
 											</span>
 										</li>
 										<li>
 											<h3>Email</h3>
-											<a href="mailto:nrs171@msstate.edu">nrs171@msstate.edu</a>
+											<a href="mailto:noahsiano@gmail.com">noahsiano@gmail.com</a>
 										</li>
 										<li>
 											<h3>Phone</h3>
