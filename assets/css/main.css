@@ -3,11 +3,16 @@ body {
   max-width:650px;
   line-height:1.6;
   font-size:18px;
-  color:#444;
+  font-family:'Inter', serif;
+  color:#FFF;
+  /* background-color: #1F1F1F; */
+  /* background-color: #12111F; */
+  background-image: linear-gradient(to bottom right, #12111F, #0C1920);
   padding:0 10px
 }
 h1,h2,h3 {
-  line-height:1.2
+  line-height:1.2;
+  font-family: "Montserrat", serif;
 }
 table.tableizer-table {
   font-size: 18px;
@@ -25,4 +30,8 @@ table.tableizer-table {
 }
 img {
   max-width: 100%;
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color:#a68bfe;
 }
